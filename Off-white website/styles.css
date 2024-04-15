@@ -1,0 +1,345 @@
+body {
+    font-family: 'Chivo', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    color: #fff;
+    padding: 10px 0;
+    flex-direction: column; /* Updated to column direction */
+}
+
+.navbar .logo {
+    margin: 0 auto; /* Centering the logo horizontally */
+}
+
+.logo img {
+    max-width: 200px;
+}
+
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.categories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.categories a {
+    margin: 0 15px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  
+}
+
+.categories a:hover {
+    color: rgb(176, 176, 176);
+}
+
+.hero {
+    background-image: url('./Images/hero-image.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    text-align: right;
+    padding: 100px 50px; /* Increased padding for more height */
+    color: #fff;
+    width: 100vw;
+    margin: 0;
+    min-height: 500px;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    margin-top: 500px;
+    margin-right: 50px;
+}
+
+.discover-btn {
+    padding: 10px 20px;
+    background-color: transparent; /* Set background color to transparent */
+    color: #fff; /* Set text color to white */
+    border: 2px solid #fff; /* Add a 2px white border */
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Add color transition */
+    margin-top: 20px;
+    margin-right: 50px;
+}
+
+.discover-btn:hover {
+    background-color: #fff; /* Change background to white on hover */
+    color: #333; /* Change text color on hover */
+}
+
+.popular-section h3 {
+    font-size: 2em;
+    color: #333;
+    font-weight: 550;
+}
+
+.flex-gallery {
+    display: flex;
+    margin-top: 0px;
+}
+
+.left-image,
+.right-images {
+    flex: 1; /* Take equal space */
+}
+
+.left-image .image-container {
+    width: 200px; /* Adjusted width to make the image container smaller */
+    height: auto;
+}
+
+.left-image .image-container img {
+    width: 100%; /* Set width to 100% of the container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    padding: 30px;
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease; /* Add transition for smooth animation */
+}
+
+.text-card {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.062);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* Align text to the bottom */
+    padding-bottom: 20px; /* Add padding to create space */
+    opacity: 0; /* Hide text card by default */
+    transition: opacity 0.5s ease; /* Add transition for smooth animation */
+}
+
+.image-container:hover .text-card {
+    opacity: 1; /* Show text card on hover */
+}
+
+.our-picks {
+    margin-top: 40px;
+    text-align: left;
+    width: 100vw; /* Set width to 100% of viewport width */
+    margin-left: 0; /* Remove left margin */
+    overflow-x: hidden; /* Hide horizontal overflow */
+}
+
+.our-picks h3 {
+    font-size: 2em;
+    color: #333;
+    font-weight: 550;
+    padding-left: 30px;
+    margin-top: 0;
+}
+
+.product-cards {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+
+}
+
+.product-card {
+    width: 23%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.product-card h4 {
+    color: #333;
+    font-weight: 30;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+}
+
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.price {
+    font-weight: bold;
+    color: #333;
+    padding-top: 0%;
+    margin-top: 0;
+}
+
+.join-community {
+    display: flex;
+    justify-content: space-around; /* Adjusted justify-content */
+    align-items: center;
+    margin-top: 40px;
+    width: 100vw;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: #313131;
+}
+
+.left-content {
+    margin-right: 20px; /* Added margin to create space between left and right content */
+}
+
+.left-content h3 {
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+}
+
+.right-content {
+    display: flex;
+    align-items: center;
+}
+
+.right-content input[type="email"] {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.right-content button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.right-content button:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.footer {
+    background-color: #171717;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0; /* Increased padding */
+    padding-top: 100px;
+    width: 100vw;
+    margin-left: 0;
+    margin-right: 0;
+    line-height: 1.6;
+}
+
+.footer-links {
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+    font-size: 10px; /* Adjusted font size */
+    font-weight: 200;
+}
+
+.social-icons img {
+    width: 30px;
+    margin: 0 10px;
+    color: #fff;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 10px; /* Reduced font size */
+    color: rgb(73, 73, 73); /* Lightened color */
+}
+
+@media screen and (max-width: 1024px) {
+    .flex-gallery .left-image,
+    .flex-gallery .right-images {
+        flex: 100%;
+    }
+    
+    .product-card {
+        width: 100%;
+    }
+}
+
+/* Small screens */
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar .logo {
+        margin: 0;
+    }
+
+    .navbar a {
+        padding: 5px 10px;
+    }
+
+    .categories {
+        flex-wrap: wrap;
+    }
+
+    .categories a {
+        margin: 5px;
+    }
+
+    .hero h2 {
+        font-size: 2em;
+        margin-top: 200px;
+        margin-right: 30px;
+    }
+
+    .discover-btn {
+        padding: 8px 15px;
+        margin-top: 15px;
+        margin-right: 30px;
+    }
+
+    .flex-gallery {
+        flex-direction: column;
+    }
+
+    .left-image,
+    .right-images {
+        flex: 100%;
+        margin-bottom: 20px;
+    }
+
+    .product-cards {
+        flex-direction: column;
+    }
+
+    .product-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
